@@ -1,0 +1,29 @@
+{{#each cards}}
+<div class="card">
+  <div class="card-container">
+    <div class="card-front">
+      <div class="card-photo"></div>
+      <h2>{{deckName}}</h2>
+      <p>{{"Cards.question"}}</p>
+        <input type="text" name="answer">
+      <input id="otvet" type="submit" value="ответить">
+    </div>
+    <div class="card-back">
+      <h2>Правильный ответ</h2>
+      <p>{{"Cards.answer"}}</p>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+{{!-- <div>
+  <ul>
+    {{#each cards}}
+    <li>
+      <a href="/question" style="color:blue;">{{"Cards.question"}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</div> --}}
+
+
